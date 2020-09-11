@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+	background-color: #f8f9fa;
+}
+
+.container-fluid {
+	width: 90%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Burger Menu */
+.overlay {
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */
+	height: 100%;
+	width: 0;
+	position: fixed; /* Stay in place */
+	z-index: 9; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: rgb(0, 0, 0); /* Black fallback color */
+	background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content {
+	position: relative;
+	top: 25%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: center; /* Centered text/links */
+	margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+}
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+}
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+/* Search Bar */
+form {
+	position: relative;
+	width: 25rem;
+	background: #57bd84;
+	border-radius: 20rem;
+}
+input,
+button {
+	height: 3rem;
+	font-family: 'Lato', sans-serif;
+	border: 0;
+	color: #2f2f2f;
+	font-size: 1.1rem;
+}
+input[type='search'] {
+	outline: 0;
+	width: 100%;
+	background: #fff;
+	padding: 1rem 1.6rem;
+	border-radius: 20rem;
+	appearance: none;
+	transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+	transition-property: width, border-radius;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 6rem;
+	font-weight: bold;
+	background: #57bd84;
+	border-radius: 0 20rem 20rem 0;
+}
+input:not(:placeholder-shown) {
+	border-radius: 20rem 0 0 20rem;
+	width: calc(100% - 6rem);
+}
+label {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.list-bg-movie {
+	background: url('../img/Vector1.svg') no-repeat center;
+	height: 16rem;
+}
+.list-bg-tvshow {
+	background: url('../img/Vector2.svg') no-repeat center;
+	height: 16rem;
+}
+.list-bg-populer {
+	background: url('../img/Vector3.svg') no-repeat center;
+	height: 16rem;
+}
+.list-bg-trending {
+	background: url('../img/Vector4.svg') no-repeat center;
+	height: 16rem;
+}
+
+.list-title {
+	font-size: 3.2rem;
+	background-color: transparent;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.list-title a {
+	color: black;
+	text-decoration: none;
+}
+
+.movie-title::before {
+	content: '';
+	background: #ffd117;
+	position: absolute;
+	height: 2.2rem;
+	width: 6px;
+	border-radius: 2px;
+	margin-left: -10px;
+}
+.tvshow-title::before {
+	content: '';
+	background: #5cd2d9;
+	position: absolute;
+	height: 2.2rem;
+	width: 6px;
+	border-radius: 2px;
+	margin-left: -10px;
+}
+.populer-title::before {
+	content: '';
+	background: #ffd8c7;
+	position: absolute;
+	height: 2.2rem;
+	width: 6px;
+	border-radius: 2px;
+	margin-left: -10px;
+}
+.trending-title::before {
+	content: '';
+	background: #ff6a28;
+	position: absolute;
+	height: 2.2rem;
+	width: 6px;
+	border-radius: 2px;
+	margin-left: -10px;
+}
+
+.title-box {
+	background-color: #57bd84;
+	width: 40px;
+	height: 120px;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	border-radius: 8px 0 0 8px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-right: -22px;
+	padding-top: 20px;
+	position: relative;
+	left: 0.8%;
+}
+
+.title-box a {
+	color: #fff;
+}

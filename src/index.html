@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>reMovi</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- HEADER -->
+			<header>
+				<nav
+					class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+				>
+					<!-- menu -->
+					<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+							>&times;</a
+						>
+						<div class="overlay-content">
+							<a href="#">About</a>
+							<a href="#">Services</a>
+							<a href="#">API</a>
+							<a href="#">Contact</a>
+						</div>
+					</div>
+					<span
+						class="img-fluid"
+						style="font-size: 30px; cursor: pointer;"
+						onclick="openNav()"
+						><img src="../src/img/Menu.png" style="width: 30px;"
+					/></span>
+
+					<!-- form -->
+					<form class="ml-auto search-form" role="search">
+						<label for="search">Search for stuff</label>
+						<input
+							class="ml-auto search-field"
+							id="search"
+							type="search"
+							placeholder="Search"
+							autofocus
+							required
+						/>
+						<button
+							type="submit"
+							id="myBtn"
+							data-toggle="modal"
+							data-target=".bd-example-modal-lg"
+						>
+							Go
+						</button>
+					</form>
+
+					<!-- logo -->
+					<a
+						class="navbar-brand ml-auto font-weight-bold d-none d-md-block"
+						href="#"
+						>reMovi</a
+					>
+				</nav>
+			</header>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="card-deck"></div>
+				</div>
+			</div>
+
+			<!-- MAIN -->
+			<main>
+				<div class="row text-center mt-4 mb-5">
+					<div
+						class="d-none d-sm-flex col-sm-6 col-md-3 justify-content-center align-items-center list-bg-movie"
+					>
+						<div class="list-title">
+							<a href="#movie">
+								movie
+							</a>
+						</div>
+					</div>
+					<div
+						class="d-none d-sm-flex col-sm-6 col-md-3 justify-content-center align-items-center list-bg-tvshow"
+					>
+						<div class="list-title">
+							<a href="#tvshow">
+								tv-show
+							</a>
+						</div>
+					</div>
+					<div
+						class="d-none d-sm-flex col-sm-6 col-md-3 justify-content-center align-items-center list-bg-populer"
+					>
+						<div class="list-title">
+							<a href="#populer">
+								populer
+							</a>
+						</div>
+					</div>
+					<div
+						class="d-none d-sm-flex col-sm-6 col-md-3 justify-content-center align-items-center list-bg-trending"
+					>
+						<div class="list-title">
+							<a href="#trending">
+								trending
+							</a>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<hr
+				class="d-none d-sm-block"
+				style="border: 1.5px solid #dae0e5; border-radius: 15px;"
+			/>
+
+			<!-- SUB MAIN -->
+			<div class="content pl-4 mb-5">
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<h6 class="mt-3">Incoming Movie's</h6>
+							<br />
+							<h1 class="mb-4">DEATH ON THE NILE (2020)</h1>
+						</div>
+						<div class="row">
+							<div class="col">
+								<p>Date</p>
+								<p class="font-weight-bold">October 8, 2020</p>
+							</div>
+							<div class="col">
+								<p>Synopsis</p>
+								<p class="text-justify d-flex">
+									Death on the Nile is a book of detective fiction by British
+									writer Agatha Christie, first published in the UK by the
+									Collins Crime Club on 1 November 1937 and in the US by Dodd,
+									Mead and Company the following year.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 d-flex justify-content-center align-items-center"
+					>
+						<video class="img-fluid" width="540" height="320" controls>
+							<source src="./img/trailer.mp4" type="video/mp4" />
+							<source src="movie.ogg" type="video/ogg" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+			</div>
+
+			<!-- LIST MOVIE-->
+			<div class="row mb-5">
+				<div class="col" id="movie">
+					<h3 class="movie-title">Movie</h3>
+					<div
+						class="row d-flex justify-content-around align-items-center p-3"
+						style="background-color: #f0f0f0;"
+					>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="title-box font-weight-bold d-flex align-items-center">
+							<a href="">more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- LIST TV SHOW-->
+			<div class="row mb-5">
+				<div class="col" id="tvshow">
+					<h3 class="tvshow-title">Tv Show</h3>
+					<div
+						class="row d-flex justify-content-around align-items-center p-3"
+						style="background-color: #f0f0f0;"
+					>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="title-box font-weight-bold d-flex align-items-center">
+							<a href="">more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- LIST POPULER-->
+			<div class="row mb-5">
+				<div class="col" id="populer">
+					<h3 class="populer-title">Populer</h3>
+					<div
+						class="row d-flex justify-content-around align-items-center p-3"
+						style="background-color: #f0f0f0;"
+					>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="title-box font-weight-bold d-flex align-items-center">
+							<a href="">more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- LIST TRENDING-->
+			<div class="row mb-5">
+				<div class="col" id="trending">
+					<h3 class="trending-title">Trending</h3>
+					<div
+						class="row d-flex justify-content-around align-items-center p-3"
+						style="background-color: #f0f0f0;"
+					>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="card" style="width: 10rem;">
+								<img
+									class="card-img-top img-fluid"
+									src="./image/poster.png"
+									alt="Card image cap"
+								/>
+							</div>
+						</div>
+						<div class="title-box font-weight-bold d-flex align-items-center">
+							<a href="">more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				function openNav() {
+					document.getElementById('myNav').style.width = '100%';
+				}
+
+				function closeNav() {
+					document.getElementById('myNav').style.width = '0%';
+				}
+
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the button that opens the modal
+				var btn = document.getElementById('myBtn');
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName('close')[0];
+
+				// When the user clicks on the button, open the modal
+				btn.onclick = function () {
+					modal.style.display = 'block';
+				};
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function () {
+					modal.style.display = 'none';
+				};
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function (event) {
+					if (event.target == modal) {
+						modal.style.display = 'none';
+					}
+				};
+			</script>
+		</div>
+	</body>
+</html>
